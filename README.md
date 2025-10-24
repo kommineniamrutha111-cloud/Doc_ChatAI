@@ -19,20 +19,6 @@ Doc Chat AI is a document-grounded assistant that pairs a Streamlit chat interfa
 
 ## Architecture
 
-```mermaid
-flowchart LR
-  User -->|Prompts & File Uploads| Streamlit[Streamlit Frontend]
-  Streamlit -->|REST API| FastAPI
-  FastAPI --> DocumentProcessor[Document Processor<br/>Validation & Chunking]
-  DocumentProcessor --> Embeddings[Embeddings<br/>(HuggingFace / Gemini)]
-  Embeddings --> Chroma[Chroma Vector Store]
-  FastAPI --> LLMChain[LLM Chain Factory]
-  LLMChain --> LLMProviders[LLM Providers<br/>(Groq / Gemini)]
-  LLMProviders -->|Responses| FastAPI
-  FastAPI -->|Answers & Metadata| Streamlit
-  Streamlit -->|Chat UI| User
-```
-
 ---
 
 ## Tech Stack
