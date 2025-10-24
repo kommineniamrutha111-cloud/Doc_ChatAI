@@ -2,13 +2,16 @@
 
 ## Overview
 
-Doc Chat AI is a document-grounded assistant that pairs a Streamlit chat interface with a FastAPI backend. Upload one or more PDFs, let the service index them with retrieval-augmented generation (RAG), and ask questions that are answered with citations drawn from your own files. The separation between UI and API keeps the solution easy to deploy, scale, and extend with additional actors, tools, or model providers.
+Doc Chat AI is a document-grounded assistant that pairs a Streamlit chat interface with a FastAPI backend. Upload one or more Docs(For now PDFs later multiple format ingestion functions will be implemented in the later builds), let the service index them with retrieval-augmented generation (RAG), and ask questions that are answered with citations drawn from your own files. The separation between UI and API keeps the solution easy to deploy, scale, and extend with additional actors, tools, or model providers.
 
 ---
+## Ui
+
+![architecture](https://raw.githubusercontent.com/kommineniamrutha111-cloud/Doc_ChatAI/refs/heads/main/PROJ_IMAGES/ui.png)
 
 ## Features
 
-- Upload and index multiple PDFs, then query them via chat.
+- Upload and index multiple Docs, then query them via chat.
 - Switch between Groq and Gemini models while reusing the same vector store.
 - Token-based chunking for high-quality context windows.
 - Built-in vector store inspector for transparency and debugging.
@@ -17,7 +20,8 @@ Doc Chat AI is a document-grounded assistant that pairs a Streamlit chat interfa
 
 ---
 
-## Architecture
+## 🏗️ Architecture
+![architecture](https://raw.githubusercontent.com/kommineniamrutha111-cloud/Doc_ChatAI/refs/heads/main/PROJ_IMAGES/Mermaid%20Chart.png)
 
 ---
 
@@ -44,8 +48,8 @@ Doc Chat AI is a document-grounded assistant that pairs a Streamlit chat interfa
 ## Installation
 
 ```bash
-git clone https://github.com/Zlash65/rag-bot-fastapi.git
-cd rag-bot-fastapi
+git clone https://github.com/kommineniamrutha111-cloud/Doc_ChatAI.git
+cd Doc_ChatAI
 ```
 
 Create and activate a virtual environment:
