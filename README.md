@@ -111,7 +111,7 @@ Access the UI at `http://localhost:8501` and the API at `http://localhost:8000`.
 ## Project Structure
 
 ```text
-rag-bot-fastapi/
+Doc-Chat-fastapi/
 ├── client/                     # Streamlit frontend
 │   ├── app.py                  # Streamlit entrypoint
 │   ├── components/             # UI components
