@@ -2,7 +2,7 @@
 
 ## Overview
 
-Doc Chat AI is a document-grounded assistant that pairs a Streamlit chat interface with a FastAPI backend. Upload one or more Docs(For now PDFs later multiple format ingestion functions will be implemented in the later builds), let the service index them with retrieval-augmented generation (RAG), and ask questions that are answered with citations drawn from your own files. The separation between UI and API keeps the solution easy to deploy, scale, and extend with additional actors, tools, or model providers.
+Doc Chat AI is a document-grounded assistant that pairs a Streamlit chat interface with a FastAPI backend. Upload one or more Docs(currently supports PDFs; future versions will support multiple file formats through expanded ingestion functions), let the service index them with retrieval-augmented generation (RAG), and ask questions that are answered with citations drawn from your own files. The separation between UI and API keeps the solution easy to deploy, scale, and extend with additional actors, tools, or model providers.
 
 ---
 ## Ui
